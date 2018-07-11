@@ -14,7 +14,7 @@ def MediaObjectsForURL(url):
 	return [
 		MediaObject(
 			parts = [PartObject(key=Callback(PlayTrack, url=url, ext='mp3'))],
-			container = 'mp3',
+			container = Container.MP3,
 			audio_codec = AudioCodec.MP3
 		)
 	]
